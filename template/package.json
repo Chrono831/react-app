@@ -1,0 +1,8 @@
+{
+  "name": "vc-react-app",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "webpack --env.NODE_ENV=production --config webpack.prod.js",
+    "watch": "webpack --env.NODE_ENV=development --config webpack.dev.js --watch"
+  }
+}

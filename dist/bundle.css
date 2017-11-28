@@ -1,0 +1,91 @@
+.app {
+  -ms-flex: 1 1;
+      flex: 1 1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .app > header {
+    text-align: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    background-color: #1c3a62;
+    color: white;
+    border-bottom: 4px solid #D2232A;
+    height: 130px;
+    padding: 20px; }
+    .app > header > img {
+      height: 50px; }
+    .app > header > h1 {
+      margin: 0;
+      font-size: 2.5em; }
+  .app > p {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1 1;
+        flex: 1 1;
+    -ms-flex-pack: center;
+        justify-content: center;
+    font-size: large; }
+    .app > p > code {
+      margin-left: 5px;
+      margin-right: 5px; }
+
+@-webkit-keyframes rumble {
+  from {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg); }
+  to {
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg); } }
+
+@keyframes rumble {
+  from {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg); }
+  to {
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg); } }
+
+@-webkit-keyframes shake {
+  0% {
+    margin-top: 0px; }
+  25% {
+    margin-top: .5px; }
+  50% {
+    margin-top: 1px; }
+  75% {
+    margin-top: 1.5px; }
+  100% {
+    margin-top: 2px; } }
+
+@keyframes shake {
+  0% {
+    margin-top: 0px; }
+  25% {
+    margin-top: .5px; }
+  50% {
+    margin-top: 1px; }
+  75% {
+    margin-top: 1.5px; }
+  100% {
+    margin-top: 2px; } }
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px;
+  padding: 0;
+  font: 300 12px/1.4 'LaoUI', sans-serif;
+  color: #1a1a1a; }
+  body main {
+    -ms-flex: 1 1;
+        flex: 1 1;
+    display: -ms-flexbox;
+    display: flex; }
+
+/*# sourceMappingURL=bundle.css.map*/
