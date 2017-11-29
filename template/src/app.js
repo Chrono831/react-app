@@ -1,17 +1,21 @@
-import React, { Component } from 'react';
-// import logo from '../assets/ValueCentric_Red_White.png';
+import React from 'react';
 import './app.scss';
 
 const App = () => (
     <div className="app">
         <header>
-            {/*<img src={logo} className="App-logo" alt="logo" />*/}
-            {/*<img src='build/static/ValueCentric_Red_White.c17452c3.png' className="App-logo" alt="logo" />*/}
-            <h1>create-react-app</h1>
+            <h1>ValueCentric</h1>
+            <h2>create-react-app</h2>
         </header>
-        <p>
-            To get started, edit <code>src/App.js</code> then save and reload.
-        </p>
+        <div>
+            <p>To Get Started</p> 
+            <ol>
+                <li>Run<code>npm run watch</code></li>
+                <li>Edit<code>src/App.js</code></li>
+                <li>Save</li>
+                <li>Reload this page</li>
+            </ol>
+        </div>
       </div>
 );
 
