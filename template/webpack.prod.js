@@ -1,10 +1,6 @@
 const merge = require('webpack-merge');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-
 const common = require('./webpack.common.js');
-const paths = require('./paths');
-const options = require('./options');
 
 process.env.BABEL_ENV = 'production';
 process.env.NODE_ENV = 'production';

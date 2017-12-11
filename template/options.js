@@ -8,6 +8,7 @@ const BABEL_OPTIONS = {
     plugins : [
         'transform-object-rest-spread', 
         'transform-decorators',
+        'transform-class-properties',
     ],
     presets : [
         ['react'],

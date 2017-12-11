@@ -28,12 +28,10 @@ module.exports = env => ({
             },
             {
               test : [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
-              include: paths.assets,
               use : [{ loader : 'url-loader', options : options.imageOptions, }],
             },
             {
                 test : /\.scss$/,
-                include: paths.src,
                 use : ExtractTextPlugin.extract({
                     use  : [
                         { loader : 'css-loader', options: { importLoaders : 2 }, },
@@ -43,7 +41,6 @@ module.exports = env => ({
                 })
             },{
                 test : /\.css$/,
-                include: paths.src,
                 use : ExtractTextPlugin.extract({
                     use  : [
                         { loader : 'css-loader', options: { importLoaders : 1 }, },
@@ -56,11 +53,7 @@ module.exports = env => ({
     plugins : [
         new CleanWebpackPlugin(paths.build), // cleans the build path on every build
         new ExtractTextPlugin('bundle.css'), // extract imported css into own file
-        // new HtmlWebpackPlugin({
-        //     title: 'Valuecentric React App', 
-        //     template : paths.template
-        // }), // provides an html template with a main element
-        new webpack.DefinePlugin({  
+        new webpack.DefinePlugin({
             'process.env': {
                 'NODE_ENV': JSON.stringify(env.NODE_ENV)
             }
